@@ -1,4 +1,6 @@
 
+<h1> [FreeTutorials.Us] Udemy - Angular 6 (formerly Angular 2) - The Complete Guide <h1>
+
 <h1> Installed Angular Latest </h1>
 <pre>
 <code>
@@ -11,3 +13,5 @@ ng serve
 
 </code>
 </pre>
+
+Getting started ==> stop at project setup
