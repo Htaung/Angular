@@ -14,4 +14,4 @@ ng serve
 </code>
 </pre>
 
-Getting started ==> stop at project setup
+Getting started ==> stop at Editing First App
