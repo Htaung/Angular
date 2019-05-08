@@ -26,6 +26,7 @@ ng new my-first-app
 ng serve
 
 
+<pre>
 Course Structure
 The Basic
 component & data binding
@@ -44,7 +45,9 @@ Animation & Testing
 
 
 Installed bootstrap
+<code> 
 npm install --save bootstrap@3
+</code>
 
 
 angular.json configure CLI 
@@ -53,3 +56,5 @@ import style in angular.json by adding or searching
 
 
 Ends at 7.Course Structure
+
+</pre>
