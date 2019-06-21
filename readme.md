@@ -157,5 +157,10 @@ Unlike structural directives, attribute directives don't add or remove elements.
 ngStyle attribute directive
 <p [ngStyle]="{ backgroundColor: getColor()}">
 
+<p>
+*ngFor
+<div *ngFor="let logItem of log; let i = index"
+</p>
+		
 <h1> Reached at 
-Angular 6 (formerly Angular 2) - The Complete Guide\2. The Basics > 27
+Angular 6 (formerly Angular 2) - The Complete Guide\2. The Basics > 30
