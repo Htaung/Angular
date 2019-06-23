@@ -158,9 +158,85 @@ ngStyle attribute directive
 <p [ngStyle]="{ backgroundColor: getColor()}">
 
 <p>
-*ngFor
-<div *ngFor="let logItem of log; let i = index"
+*ngFor 
+<div *ngFor="let logItem of log; let i = index" //extract current index in the loop
 </p>
-		
+
+
+
+<h1> Creating Course Project <h1>
+
+<h2> Installed Jquery </h2>
+<p>
+	<pre>
+	<code> 
+		npm install --save jquery
+	</code>
+	</pre>
+</p>
+
+<h2> Installed bootstrap </h2>
+<p>
+	<pre>
+	<code> 
+		npm install --save bootstrap@3
+	</code>
+	</pre>
+</p>
+
+<h2> Adding global css style </h2>		
+<p>
+	add angular.json or angular-cli.json ==> add in style array
+</p>
+
+<h2> Generate Component Manually </h2>		
+<p>
+	<pre>
+	<code>
+		ng generate component componentName --spec false // set false to prevent the creation of testing file
+		ng g c componentName --spec false 
+		ng g c specificFolderName/componentName -- spec false
+	<code>
+	</pre>
+</p>
+
+<h2> Creating Model </h2>
+<pre>
+<code>
+export class Ingredient{
+    public name: string;
+    public amount: number;
+
+    constructor(name: string, amount: number){
+        this.name = name;
+        this.amount =  amount;
+    }
+}
+same as 
+export class Ingredient{
+    constructor(public name: string, public amount: number){}
+}
+</pre>
+</code>
+
+<h2> Debugging </h2>
+<p>
+Use aguary for debugging in chrome,browser
+https://augury.rangle.io/
+
+Running old version from new version ==> angular cli version raised error 
+like
+ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected.
+solve by
+https://github.com/ReactiveX/rxjs/issues/4540
+
+"rxjs": "^6.0.0" change "rxjs": "6.0.0"
+and next go to terminal
+and install npm using this command "npm i"
+enjoy
+
+
 <h1> Reached at 
-Angular 6 (formerly Angular 2) - The Complete Guide\2. The Basics > 30
+C:\Users\Htaung\Desktop\[FreeTutorials.Us] Udemy - Angular 6 (formerly Angular 2) - The Complete Guide\5. Components & Databinding Deep Dive\1
+
+
