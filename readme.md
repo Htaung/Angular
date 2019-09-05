@@ -94,7 +94,7 @@ ng g c servers
 to use multi-line expression ==> use `` instead of ''
 
 
-Attribute Selector
+Attribut e Selector
 selector: '[app-servers]',
 use it in html element as a tag 
 <div app-servers></div>
@@ -235,8 +235,34 @@ and next go to terminal
 and install npm using this command "npm i"
 enjoy
 
+<h2> Custom property binding </h2>
+<pre>
+<p>
+Passing model from main app component to child component ==>
+type script syntax defining the type => element may only have this type ==> like class have fields
+	element: {type: string, name: string, content: string};
+
+declare @Input() in main component's passing data
+@Input() element: {type: string, name: string, content: string};
+
+in main component html passing element using decorator [] as element
+<app-server-element *ngFor="let serverElement of serverElements" [element]="serverElement"></app-server-element>
+in child component need to add @Input() in passing element decorator
+@Input() element: {type: string, name: string, content: string};
+
+<h1> Assigning an alias to custom properties </h1>
+<app-server-element *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-server-element>
+@Input('srvElement') element: {type: string, name: string, content: string};
+
+<h1> passing own event to out of the component  </h1>
+@Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+
+</pre>
+</p>
+
+
 
 <h1> Reached at 
-C:\Users\Htaung\Desktop\[FreeTutorials.Us] Udemy - Angular 6 (formerly Angular 2) - The Complete Guide\5. Components & Databinding Deep Dive\1
+C:\Users\Htaung\Desktop\[FreeTutorials.Us] Udemy - Angular 6 (formerly Angular 2) - The Complete Guide\5. Components & Databinding Deep Dive\6
 
 
